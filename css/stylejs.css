@@ -1,0 +1,50 @@
+body{
+    background-color: #ffffff;
+    max-width: 100%;
+    
+}
+
+
+h1{
+    
+    text-transform: uppercase;
+    text-shadow: 1px 1px 4px black;
+    margin: 0px;
+}
+
+.container{
+    max-width: 500px;
+    min-width: 400px;
+    padding-bottom: 20px;
+}
+
+
+.block1{
+
+    height: 400px;
+    background-color: #ff000052;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.block1 input{
+    float: right;
+}
+
+
+.menu-item{
+    border: 2px solid #66CDAA;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-item .submenu{
+    width: 120px;
+    height: 40px;
+    background: yellow;
+    position: absolute;
+    cursor: pointer;
+}

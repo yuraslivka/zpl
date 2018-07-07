@@ -1,0 +1,179 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.png">
+    <meta name="theme-color" content="#f58220">
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="css/style.css">
+
+    <title>ЗАРПЛАТА</title>
+  </head>
+
+
+
+  <body>
+    
+
+<div class="container">
+
+  <div class="row">
+    <div class="col title1">
+     <h1>Зарплата нетто</h1>
+    </div>
+  </div>
+
+   
+   <div class="row calczp">
+    <div class="col">
+      <form name="calc1">
+        <div class="row">
+          <div class="col">
+             <label for="formGroupExampleInput">Зарплата брутто</label>
+             <input type="text" class="form-control" placeholder="брутто" name="zpbrutto">
+         </div>
+            <div class="col">
+              <label for="formGroupExampleInput">Зарплата нетто</label>
+              <input type="text" class="form-control" placeholder="нетто" name="zpnetto" disabled>
+           </div>
+          </div>
+
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="stud"  onchange="cli()">
+              <label class="form-check-label" for="stud">
+              Я студент
+               </label>
+          </div>
+
+
+     </form>
+    </div>
+</div>
+
+
+
+<div class="row calct">
+    <div class="col">
+      <form name="calc2">
+        <div class="row">
+          <div class="col">
+             <label for="formGroupExampleInput">Часы</label>
+             <input type="text" class="form-control" placeholder="Часы" name="time">
+         </div>
+            <div class="col">
+              <label for="formGroupExampleInput">Выдайность</label>
+              <select class="custom-select mr-sm-2" id="wydc" name="wydc">
+                <option selected>Choose...</option>
+                <option value="13.70">0-65</option>
+                <option value="14.00">66-75</option>
+                <option value="14.50">76-85</option>
+                <option value="14.70">86-95</option>
+                <option value="15.70">96-105</option>
+                <option value="17.20">106-115</option>
+                <option value="18.40">116-125</option>
+                <option value="20.00">126-135</option>
+                <option value="21.70">136-145</option>
+                <option value="23.40">146</option>
+              </select>
+           </div>
+          </div>
+
+          <div class="row">
+          <div class="col">
+             <label for="formGroupExampleInput">Зарплата брутто</label>
+             <input type="text" class="form-control" placeholder="брутто" name="tzpbrutto" disabled>
+         </div>
+            <div class="col">
+              <label for="formGroupExampleInput">Зарплата нетто</label>
+              <input type="text" class="form-control" placeholder="нетто" name="tzpnetto" disabled>
+           </div>
+          </div>
+
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="stud3"  onchange="cli3()">
+              <label class="form-check-label" for="stud3">
+              Я студент
+               </label>
+          </div>
+
+
+     </form>
+    </div>
+</div>
+
+
+
+  <div class="row calc">
+    <div class="col">
+      <form name="calc">
+        <div class="row">
+          <div class="col">
+             <label for="formGroupExampleInput">Количество картонов</label>
+             <input type="text" class="form-control" placeholder="картоны" name="kar">
+         </div>
+            <div class="col">
+              <label for="formGroupExampleInput">Количество часов</label>
+              <input type="text" class="form-control" placeholder="часы" name="th">
+           </div>
+          </div>
+
+          <div class="row">
+          <div class="col">
+             <label for="formGroupExampleInput">Средняя выдайность</label>
+             <input type="text" class="form-control" placeholder="выдайность" name="wyd" disabled>
+         </div>
+            <div class="col">
+              <label for="formGroupExampleInput">Порог</label>
+              <input type="text" class="form-control" placeholder="порог" name="step" disabled>
+           </div>
+          </div>
+
+          <div class="row">
+          <div class="col">
+             <label for="formGroupExampleInput">Зарплата брутто</label>
+             <input type="text" class="form-control" placeholder="Зарплата" name="wagesb" disabled>
+         </div>
+            <div class="col">
+              <label for="formGroupExampleInput">Зарплата нетто</label>
+              <input type="text" class="form-control" placeholder="Зарплата" name="wagesn" disabled>
+           </div>
+          </div>
+
+
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="stud2"  onchange="cli2()">
+              <label class="form-check-label" for="stud2">
+              Я студент
+               </label>
+          </div>
+
+
+     </form>
+    </div>
+</div>
+
+
+
+    
+              
+
+
+    <!-- Optional JavaScript -->
+
+     <script src="js/common.js"></script>
+     
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
